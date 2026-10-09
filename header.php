@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1 id="main_title">
-      <a href="index.php" aria-label="Home" class="text-white text-decoration-none bg-dark rounded px-1"><i class="bi bi-check-all" aria-hidden="true"></i>
+      <a href="index.php" aria-label="Home" class="text-white text-decoration-none rounded px-1"><i class="bi bi-check-all" aria-hidden="true"></i>
       </a>
       Task Management System
     </h1>
