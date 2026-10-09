@@ -1,9 +1,80 @@
-#main_title{
-  text-align: center;
-  background-color: darkslateblue;
+/* ---------- Colours (change them here and the whole site changes) ---------- */
+:root {
+  --primary: #483D8B;
+  --primary-dark: #382F70;
+  --primary-soft: #EEECF8;
+  --page-bg: #F5F6FA;
+  --text: #1F2333;
+  --muted: #6B7080;
+  --border: #E4E6EE;
+
+  /* make Bootstrap's "primary" colour match ours */
+  --bs-primary: #483D8B;
+  --bs-primary-rgb: 72, 61, 139;
+}
+
+/* ---------- Page ---------- */
+body {
+  background-color: var(--page-bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;           /* pushes the footer to the bottom of the page */
+}
+
+/* ---------- Header ---------- */
+#main_title {
+  background-color: var(--primary);
   color: #fff;
-  padding: 15px;
-  font-family:Arial, Helvetica, sans-serif;
-  letter-spacing: 1px;
-  font-weight: 600;
+  padding: 14px 0;
+}
+
+#main_title .brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-icon {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-date {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding: 18px 0;
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+  --bs-btn-bg: var(--primary);
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-hover-bg: var(--primary-dark);
+  --bs-btn-hover-border-color: var(--primary-dark);
+  --bs-btn-active-bg: var(--primary-dark);
+  --bs-btn-active-border-color: var(--primary-dark);
 }
